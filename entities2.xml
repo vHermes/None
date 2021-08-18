@@ -1,0 +1,6 @@
+<entities anm2root="gfx/" version="5">
+		<entity id="414" variant="0" name="Little Corn" baseHP="250" stageHP="0" boss="1" bossID="60" champion="0" collisionDamage="1" collisionMass="30" collisionRadius="16" friction="1" numGridCollisionPoints="12" shadowSize="16" portrait="82" anm2path="414.000_Littlecorn.anm2">
+		<bestiary transform="0,0,1" anim="Idle" />
+		<gibs amount="6" blood="1" bone="1" eye="0" gut="1" large="1" />
+		</entity>
+</entities>
