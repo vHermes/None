@@ -18,24 +18,24 @@ MDState = {
 } 
 
 MarkovChain = {
-	[MDState.IDLE] = 							{0.5, 0.5, 0, 0, 0, 0, 0},
+	[MDState.IDLE] = 				{0.5, 0.5, 0, 0, 0, 0, 0},
 	[MDState.SHOOT] = 			    	{1, 0, 0, 0, 0, 0, 0},
-	[MDState.BOMB] = 							{1, 0, 0, 0, 0, 0, 0},
+	[MDState.BOMB] = 				{1, 0, 0, 0, 0, 0, 0},
 	[MDState.TELEPORT] =  				{1, 0, 0, 0, 0, 0, 0},
 	[MDState.BOMBRETURN] =	 			{1, 0, 0, 0, 0, 0, 0},
-	[MDState.MEGABOMB] = 					{1, 0, 0, 0, 0, 0, 0},
+	[MDState.MEGABOMB] = 				{1, 0, 0, 0, 0, 0, 0},
 	[MDState.SUMMON] = 			    	{1, 0, 0, 0, 0, 0, 0}
 }
 
 function MarkovTransition(state)
-		local roll = math.random()
-		for i = 1, #MarkovChain do
-				roll = roll - MarkovChain[State][i]
-				if roll <=0 then
-						return i
-				end
+	local roll = math.random()
+	for i = 1, #MarkovChain do
+		roll = roll - MarkovChain[State][i]
+		if roll <=0 then
+			return i
+			end
 		end
-		return #MarkovChain
+	return #MarkovChain
 end
 
 function Mod:LittleCornUpdate(entity)
