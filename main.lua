@@ -18,13 +18,13 @@ MDState = {
 } 
 
 MarkovChain = {
-		[MDState.IDLE] = 							{0.5, 0.5, 0, 0, 0, 0, 0},
-		[MDState.SHOOT] = 			    	{1, 0, 0, 0, 0, 0, 0},
-		[MDState.BOMB] = 							{1, 0, 0, 0, 0, 0, 0},
-		[MDState.TELEPORT] =  				{1, 0, 0, 0, 0, 0, 0},
-		[MDState.BOMBRETURN] =	 			{1, 0, 0, 0, 0, 0, 0},
-		[MDState.MEGABOMB] = 					{1, 0, 0, 0, 0, 0, 0},
-		[MDState.SUMMON] = 			    	{1, 0, 0, 0, 0, 0, 0}
+	[MDState.IDLE] = 							{0.5, 0.5, 0, 0, 0, 0, 0},
+	[MDState.SHOOT] = 			    	{1, 0, 0, 0, 0, 0, 0},
+	[MDState.BOMB] = 							{1, 0, 0, 0, 0, 0, 0},
+	[MDState.TELEPORT] =  				{1, 0, 0, 0, 0, 0, 0},
+	[MDState.BOMBRETURN] =	 			{1, 0, 0, 0, 0, 0, 0},
+	[MDState.MEGABOMB] = 					{1, 0, 0, 0, 0, 0, 0},
+	[MDState.SUMMON] = 			    	{1, 0, 0, 0, 0, 0, 0}
 }
 
 function MarkovTransition(state)
