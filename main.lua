@@ -1,7 +1,6 @@
 local game = Game()
 local Mod = RegisterMod("LittleCorn", 1)
 local sounds = SFXManager()
-local LittleCornChance = 25
 
 EntityType.LITTLECORN = Isaac.GetEntityTypeByName("LittleCorn")
 
