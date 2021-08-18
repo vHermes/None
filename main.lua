@@ -32,9 +32,9 @@ function MarkovTransition(state)
 	for i = 1, #MarkovChain do
 		roll = roll - MarkovChain[State][i]
 		if roll <=0 then
-			return i
-			end
+		return i
 		end
+	end
 	return #MarkovChain
 end
 
